@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class MyNotepad
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,28 +20,27 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileTool = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditTool = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SearchTool = New System.Windows.Forms.ToolStripMenuItem()
+        Me.helpToolStrip = New System.Windows.Forms.ToolStripMenuItem()
+        Me.texto = New System.Windows.Forms.RichTextBox()
         Me.NewTool = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenTool = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveTool = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveAsTool = New System.Windows.Forms.ToolStripMenuItem()
         Me.CloseTool = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EditTool = New System.Windows.Forms.ToolStripMenuItem()
         Me.CutToolStrip = New System.Windows.Forms.ToolStripMenuItem()
         Me.CopyToolStrip = New System.Windows.Forms.ToolStripMenuItem()
         Me.PasteTool = New System.Windows.Forms.ToolStripMenuItem()
         Me.DoTool = New System.Windows.Forms.ToolStripMenuItem()
         Me.UndoTool = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SearchTool = New System.Windows.Forms.ToolStripMenuItem()
         Me.FindTool = New System.Windows.Forms.ToolStripMenuItem()
         Me.FindReplaceTool = New System.Windows.Forms.ToolStripMenuItem()
-        Me.helpToolStrip = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutTool = New System.Windows.Forms.ToolStripMenuItem()
-        Me.texto = New System.Windows.Forms.RichTextBox()
-        Me.OpenFileDialog = New System.Windows.Forms.OpenFileDialog()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -61,72 +60,12 @@ Partial Class Form1
         Me.FileTool.Size = New System.Drawing.Size(37, 20)
         Me.FileTool.Text = "File"
         '
-        'NewTool
-        '
-        Me.NewTool.Name = "NewTool"
-        Me.NewTool.Size = New System.Drawing.Size(152, 22)
-        Me.NewTool.Text = "New"
-        '
-        'OpenTool
-        '
-        Me.OpenTool.Name = "OpenTool"
-        Me.OpenTool.Size = New System.Drawing.Size(152, 22)
-        Me.OpenTool.Text = "Open"
-        '
-        'SaveTool
-        '
-        Me.SaveTool.Name = "SaveTool"
-        Me.SaveTool.Size = New System.Drawing.Size(152, 22)
-        Me.SaveTool.Text = "Save"
-        '
-        'SaveAsTool
-        '
-        Me.SaveAsTool.Name = "SaveAsTool"
-        Me.SaveAsTool.Size = New System.Drawing.Size(152, 22)
-        Me.SaveAsTool.Text = "Save As"
-        '
-        'CloseTool
-        '
-        Me.CloseTool.Name = "CloseTool"
-        Me.CloseTool.Size = New System.Drawing.Size(152, 22)
-        Me.CloseTool.Text = "Close"
-        '
         'EditTool
         '
         Me.EditTool.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CutToolStrip, Me.CopyToolStrip, Me.PasteTool, Me.DoTool, Me.UndoTool})
         Me.EditTool.Name = "EditTool"
         Me.EditTool.Size = New System.Drawing.Size(39, 20)
         Me.EditTool.Text = "Edit"
-        '
-        'CutToolStrip
-        '
-        Me.CutToolStrip.Name = "CutToolStrip"
-        Me.CutToolStrip.Size = New System.Drawing.Size(103, 22)
-        Me.CutToolStrip.Text = "Cut"
-        '
-        'CopyToolStrip
-        '
-        Me.CopyToolStrip.Name = "CopyToolStrip"
-        Me.CopyToolStrip.Size = New System.Drawing.Size(103, 22)
-        Me.CopyToolStrip.Text = "Copy"
-        '
-        'PasteTool
-        '
-        Me.PasteTool.Name = "PasteTool"
-        Me.PasteTool.Size = New System.Drawing.Size(103, 22)
-        Me.PasteTool.Text = "Paste"
-        '
-        'DoTool
-        '
-        Me.DoTool.Name = "DoTool"
-        Me.DoTool.Size = New System.Drawing.Size(103, 22)
-        Me.DoTool.Text = "Do"
-        '
-        'UndoTool
-        '
-        Me.UndoTool.Name = "UndoTool"
-        Me.UndoTool.Size = New System.Drawing.Size(103, 22)
-        Me.UndoTool.Text = "Undo"
         '
         'SearchTool
         '
@@ -135,30 +74,12 @@ Partial Class Form1
         Me.SearchTool.Size = New System.Drawing.Size(54, 20)
         Me.SearchTool.Text = "Search"
         '
-        'FindTool
-        '
-        Me.FindTool.Name = "FindTool"
-        Me.FindTool.Size = New System.Drawing.Size(144, 22)
-        Me.FindTool.Text = "Find"
-        '
-        'FindReplaceTool
-        '
-        Me.FindReplaceTool.Name = "FindReplaceTool"
-        Me.FindReplaceTool.Size = New System.Drawing.Size(144, 22)
-        Me.FindReplaceTool.Text = "Find & Replace"
-        '
         'helpToolStrip
         '
         Me.helpToolStrip.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutTool})
         Me.helpToolStrip.Name = "helpToolStrip"
         Me.helpToolStrip.Size = New System.Drawing.Size(24, 20)
         Me.helpToolStrip.Text = "?"
-        '
-        'AboutTool
-        '
-        Me.AboutTool.Name = "AboutTool"
-        Me.AboutTool.Size = New System.Drawing.Size(107, 22)
-        Me.AboutTool.Text = "About"
         '
         'texto
         '
@@ -169,11 +90,98 @@ Partial Class Form1
         Me.texto.TabIndex = 2
         Me.texto.Text = ""
         '
-        'OpenFileDialog
+        'NewTool
         '
-        Me.OpenFileDialog.FileName = "OpenFileDialog1"
+        Me.NewTool.Image = Global.Notepad__.My.Resources.Resource.nuevo
+        Me.NewTool.Name = "NewTool"
+        Me.NewTool.Size = New System.Drawing.Size(114, 22)
+        Me.NewTool.Text = "New"
         '
-        'Form1
+        'OpenTool
+        '
+        Me.OpenTool.Image = Global.Notepad__.My.Resources.Resource.abrir
+        Me.OpenTool.Name = "OpenTool"
+        Me.OpenTool.Size = New System.Drawing.Size(114, 22)
+        Me.OpenTool.Text = "Open"
+        '
+        'SaveTool
+        '
+        Me.SaveTool.Image = Global.Notepad__.My.Resources.Resource.save_14949
+        Me.SaveTool.Name = "SaveTool"
+        Me.SaveTool.Size = New System.Drawing.Size(114, 22)
+        Me.SaveTool.Text = "Save"
+        '
+        'SaveAsTool
+        '
+        Me.SaveAsTool.Image = Global.Notepad__.My.Resources.Resource.diskette_save_saveas_1514
+        Me.SaveAsTool.Name = "SaveAsTool"
+        Me.SaveAsTool.Size = New System.Drawing.Size(114, 22)
+        Me.SaveAsTool.Text = "Save As"
+        '
+        'CloseTool
+        '
+        Me.CloseTool.Image = Global.Notepad__.My.Resources.Resource.Logout_37127
+        Me.CloseTool.Name = "CloseTool"
+        Me.CloseTool.Size = New System.Drawing.Size(114, 22)
+        Me.CloseTool.Text = "Close"
+        '
+        'CutToolStrip
+        '
+        Me.CutToolStrip.Image = Global.Notepad__.My.Resources.Resource.cortar_icono_9536_128
+        Me.CutToolStrip.Name = "CutToolStrip"
+        Me.CutToolStrip.Size = New System.Drawing.Size(103, 22)
+        Me.CutToolStrip.Text = "Cut"
+        '
+        'CopyToolStrip
+        '
+        Me.CopyToolStrip.Image = Global.Notepad__.My.Resources.Resource.copy_two_paper_sheets_interface_symbol_icon_icons_com_73283
+        Me.CopyToolStrip.Name = "CopyToolStrip"
+        Me.CopyToolStrip.Size = New System.Drawing.Size(103, 22)
+        Me.CopyToolStrip.Text = "Copy"
+        '
+        'PasteTool
+        '
+        Me.PasteTool.Image = Global.Notepad__.My.Resources.Resource.clipboard_paste_button_icon_icons_com_72805
+        Me.PasteTool.Name = "PasteTool"
+        Me.PasteTool.Size = New System.Drawing.Size(103, 22)
+        Me.PasteTool.Text = "Paste"
+        '
+        'DoTool
+        '
+        Me.DoTool.Image = Global.Notepad__.My.Resources.Resource.redo_128
+        Me.DoTool.Name = "DoTool"
+        Me.DoTool.Size = New System.Drawing.Size(103, 22)
+        Me.DoTool.Text = "Do"
+        '
+        'UndoTool
+        '
+        Me.UndoTool.Image = Global.Notepad__.My.Resources.Resource.undo_1_icon_icons_com_62895
+        Me.UndoTool.Name = "UndoTool"
+        Me.UndoTool.Size = New System.Drawing.Size(103, 22)
+        Me.UndoTool.Text = "Undo"
+        '
+        'FindTool
+        '
+        Me.FindTool.Image = Global.Notepad__.My.Resources.Resource.find
+        Me.FindTool.Name = "FindTool"
+        Me.FindTool.Size = New System.Drawing.Size(144, 22)
+        Me.FindTool.Text = "Find"
+        '
+        'FindReplaceTool
+        '
+        Me.FindReplaceTool.Image = Global.Notepad__.My.Resources.Resource.Actions_find_replace_icon
+        Me.FindReplaceTool.Name = "FindReplaceTool"
+        Me.FindReplaceTool.Size = New System.Drawing.Size(144, 22)
+        Me.FindReplaceTool.Text = "Find & Replace"
+        '
+        'AboutTool
+        '
+        Me.AboutTool.Image = Global.Notepad__.My.Resources.Resource.about_128
+        Me.AboutTool.Name = "AboutTool"
+        Me.AboutTool.Size = New System.Drawing.Size(107, 22)
+        Me.AboutTool.Text = "About"
+        '
+        'MyNotepad
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -181,7 +189,7 @@ Partial Class Form1
         Me.Controls.Add(Me.texto)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "Form1"
+        Me.Name = "MyNotepad"
         Me.Text = "Notepadd++"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
@@ -209,5 +217,4 @@ Partial Class Form1
     Friend WithEvents helpToolStrip As ToolStripMenuItem
     Friend WithEvents AboutTool As ToolStripMenuItem
     Friend WithEvents texto As RichTextBox
-    Friend WithEvents OpenFileDialog As OpenFileDialog
 End Class
