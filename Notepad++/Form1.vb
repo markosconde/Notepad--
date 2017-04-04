@@ -8,7 +8,7 @@
 
 
     Private Sub OpenTool_Click(sender As Object, e As EventArgs) Handles OpenTool.Click
-        OpenFileDialog
+        '  OpenFileDialog
 
     End Sub
 
