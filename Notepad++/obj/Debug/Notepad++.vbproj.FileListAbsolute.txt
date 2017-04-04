@@ -1,0 +1,11 @@
+c:\users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\bin\Debug\Notepad++.exe.config
+c:\users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\bin\Debug\Notepad++.exe
+c:\users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\bin\Debug\Notepad++.pdb
+c:\users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\bin\Debug\Notepad++.xml
+c:\users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\obj\Debug\Notepad++.vbprojResolveAssemblyReference.cache
+c:\users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\obj\Debug\Notepad__.Form1.resources
+c:\users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\obj\Debug\Notepad__.Resources.resources
+c:\users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\obj\Debug\Notepad++.vbproj.GenerateResource.Cache
+c:\users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\obj\Debug\Notepad++.exe
+c:\users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\obj\Debug\Notepad++.xml
+c:\users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\obj\Debug\Notepad++.pdb
