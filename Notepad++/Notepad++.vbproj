@@ -72,6 +72,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contenido.vb" />
     <Compile Include="MyNotepad.vb">
       <SubType>Form</SubType>
     </Compile>
