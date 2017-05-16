@@ -122,7 +122,50 @@
 
     Private Sub MyNotepad_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         NewTool_Click(Nothing, Nothing)
+        PestañasTool.Enabled = False
+        PestañasTool.Checked = True
+        VentanasTool.Enabled = True
+        VentanasTool.Checked = False
+    End Sub
+
+    Private Sub FindTool_Click(sender As Object, e As EventArgs) Handles FindTool.Click
+        Dim Buscar As New Buscar
+        Buscar.Owner = Me
+        Buscar.Show()
+    End Sub
+
+    Private Sub VentanasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VentanasTool.Click
+        PestañasTool.Enabled = True
+        PestañasTool.Checked = False
+        VentanasTool.Enabled = False
+        VentanasTool.Checked = True
+
+        Dim i As Integer = 0
+
+        While i < TabControl.TabCount
+
+            Dim frm As New Form2
+
+            frm.MdiParent = Me.MdiParent
+            frm.Show()
+
+
+            i = i + 1
+        End While
+
+
+
+
+
+
+
+
+    End Sub
+
+    Private Sub PestañasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PestañasTool.Click
+        PestañasTool.Enabled = False
+        PestañasTool.Checked = True
+        VentanasTool.Enabled = True
+        VentanasTool.Checked = False
     End Sub
 End Class
-
-

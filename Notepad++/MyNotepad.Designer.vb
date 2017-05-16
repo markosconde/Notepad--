@@ -40,6 +40,9 @@ Partial Class MyNotepad
         Me.SearchTool = New System.Windows.Forms.ToolStripMenuItem()
         Me.FindTool = New System.Windows.Forms.ToolStripMenuItem()
         Me.FindReplaceTool = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VentanaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PestañasTool = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VentanasTool = New System.Windows.Forms.ToolStripMenuItem()
         Me.helpToolStrip = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutTool = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
@@ -62,7 +65,7 @@ Partial Class MyNotepad
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileTool, Me.EditTool, Me.SearchTool, Me.helpToolStrip})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileTool, Me.EditTool, Me.SearchTool, Me.VentanaToolStripMenuItem, Me.helpToolStrip})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(686, 24)
@@ -189,6 +192,25 @@ Partial Class MyNotepad
         Me.FindReplaceTool.Name = "FindReplaceTool"
         Me.FindReplaceTool.Size = New System.Drawing.Size(144, 22)
         Me.FindReplaceTool.Text = "Find & Replace"
+        '
+        'VentanaToolStripMenuItem
+        '
+        Me.VentanaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PestañasTool, Me.VentanasTool})
+        Me.VentanaToolStripMenuItem.Name = "VentanaToolStripMenuItem"
+        Me.VentanaToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
+        Me.VentanaToolStripMenuItem.Text = "Ventana"
+        '
+        'PestañasTool
+        '
+        Me.PestañasTool.Name = "PestañasTool"
+        Me.PestañasTool.Size = New System.Drawing.Size(152, 22)
+        Me.PestañasTool.Text = "Pestañas"
+        '
+        'VentanasTool
+        '
+        Me.VentanasTool.Name = "VentanasTool"
+        Me.VentanasTool.Size = New System.Drawing.Size(152, 22)
+        Me.VentanasTool.Text = "Ventanas"
         '
         'helpToolStrip
         '
@@ -370,4 +392,7 @@ Partial Class MyNotepad
     Friend WithEvents ToolStripredo As ToolStripButton
     Friend WithEvents tpMas As TabPage
     Friend WithEvents TabControl As TabControl
+    Friend WithEvents VentanaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PestañasTool As ToolStripMenuItem
+    Friend WithEvents VentanasTool As ToolStripMenuItem
 End Class

@@ -19,4 +19,25 @@
             mmodificado = value
         End Set
     End Property
+
+    Private mcodigo As Integer
+    Public Property codigo() As Integer
+        Get
+            Return mcodigo
+        End Get
+        Set(value As Integer)
+            mcodigo = value
+        End Set
+    End Property
+
+    Private mID As Integer
+    'Public Property ID() As Integer
+    '    Get
+    '        Return mID
+    '    End Get
+    '    Set(value As Integer)
+    '        mID = value
+    '    End Set
+    'End Property
+
 End Class

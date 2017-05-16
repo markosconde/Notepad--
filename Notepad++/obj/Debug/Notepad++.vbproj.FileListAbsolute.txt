@@ -10,3 +10,5 @@ c:\users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\o
 c:\users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\obj\Debug\Notepad++.pdb
 c:\users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\obj\Debug\Notepad__.MyNotepad.resources
 c:\users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\obj\Debug\Notepad__.Resource.resources
+C:\Users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\obj\Debug\Notepad__.Buscar.resources
+C:\Users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\obj\Debug\Notepad__.Form2.resources
