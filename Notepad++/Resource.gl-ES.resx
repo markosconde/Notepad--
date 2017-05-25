@@ -117,50 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="about_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\about_128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="abrir" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\abrir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Actions_find_replace_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Actions-find-replace-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="clipboard_paste_button_icon_icons_com_72805" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\clipboard-paste-button_icon-icons.com_72805.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="copy_two_paper_sheets_interface_symbol_icon_icons_com_73283" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\copy-two-paper-sheets-interface-symbol_icon-icons.com_73283.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cortar_icono_9536_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\cortar-icono-9536-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="diskette_save_saveas_1514" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\diskette_save_saveas_1514.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="find" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\find.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logout_37127" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Logout_37127.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\nuevo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="redo_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\redo_128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="save_14949" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\save_14949.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="undo_1_icon_icons_com_62895" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\undo-1_icon-icons.com_62895.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="mod1" xml:space="preserve">
-    <value>The file</value>
+    <value>O arquivo</value>
   </data>
   <data name="mod2" xml:space="preserve">
-    <value>has been modified, Do you want to save it?</value>
+    <value>foi modificado, ¿Desexa gardalo?</value>
   </data>
 </root>

@@ -43,6 +43,9 @@ Partial Class MyNotepad
         Me.VentanaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PestañasTool = New System.Windows.Forms.ToolStripMenuItem()
         Me.VentanasTool = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LanguageTool = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EnglishTool = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GalicianTool = New System.Windows.Forms.ToolStripMenuItem()
         Me.helpToolStrip = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutTool = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
@@ -65,291 +68,237 @@ Partial Class MyNotepad
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileTool, Me.EditTool, Me.SearchTool, Me.VentanaToolStripMenuItem, Me.helpToolStrip})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileTool, Me.EditTool, Me.SearchTool, Me.VentanaToolStripMenuItem, Me.LanguageTool, Me.helpToolStrip})
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(686, 24)
-        Me.MenuStrip1.TabIndex = 0
-        Me.MenuStrip1.Text = "MenuStrip1"
         '
         'FileTool
         '
+        resources.ApplyResources(Me.FileTool, "FileTool")
         Me.FileTool.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewTool, Me.OpenTool, Me.SaveTool, Me.SaveAsTool, Me.CloseTool})
         Me.FileTool.Name = "FileTool"
-        Me.FileTool.Size = New System.Drawing.Size(37, 20)
-        Me.FileTool.Text = "File"
         '
         'NewTool
         '
+        resources.ApplyResources(Me.NewTool, "NewTool")
         Me.NewTool.Image = Global.Notepad__.My.Resources.Resource.nuevo
         Me.NewTool.Name = "NewTool"
-        Me.NewTool.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
-        Me.NewTool.Size = New System.Drawing.Size(186, 22)
-        Me.NewTool.Text = "New"
         '
         'OpenTool
         '
+        resources.ApplyResources(Me.OpenTool, "OpenTool")
         Me.OpenTool.Image = Global.Notepad__.My.Resources.Resource.abrir
         Me.OpenTool.Name = "OpenTool"
-        Me.OpenTool.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
-        Me.OpenTool.Size = New System.Drawing.Size(186, 22)
-        Me.OpenTool.Text = "Open"
         '
         'SaveTool
         '
+        resources.ApplyResources(Me.SaveTool, "SaveTool")
         Me.SaveTool.Image = Global.Notepad__.My.Resources.Resource.save_14949
         Me.SaveTool.Name = "SaveTool"
-        Me.SaveTool.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.SaveTool.Size = New System.Drawing.Size(186, 22)
-        Me.SaveTool.Text = "Save"
         '
         'SaveAsTool
         '
+        resources.ApplyResources(Me.SaveAsTool, "SaveAsTool")
         Me.SaveAsTool.Image = Global.Notepad__.My.Resources.Resource.diskette_save_saveas_1514
         Me.SaveAsTool.Name = "SaveAsTool"
-        Me.SaveAsTool.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
-            Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.SaveAsTool.Size = New System.Drawing.Size(186, 22)
-        Me.SaveAsTool.Text = "Save As"
         '
         'CloseTool
         '
+        resources.ApplyResources(Me.CloseTool, "CloseTool")
         Me.CloseTool.Image = Global.Notepad__.My.Resources.Resource.Logout_37127
         Me.CloseTool.Name = "CloseTool"
-        Me.CloseTool.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
-        Me.CloseTool.Size = New System.Drawing.Size(186, 22)
-        Me.CloseTool.Text = "Close"
         '
         'EditTool
         '
+        resources.ApplyResources(Me.EditTool, "EditTool")
         Me.EditTool.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DoTool, Me.UndoTool, Me.ToolStripSeparator1, Me.CutToolStrip, Me.CopyToolStrip, Me.PasteTool})
         Me.EditTool.Name = "EditTool"
-        Me.EditTool.Size = New System.Drawing.Size(39, 20)
-        Me.EditTool.Text = "Edit"
         '
         'DoTool
         '
+        resources.ApplyResources(Me.DoTool, "DoTool")
         Me.DoTool.Image = Global.Notepad__.My.Resources.Resource.redo_128
         Me.DoTool.Name = "DoTool"
-        Me.DoTool.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Y), System.Windows.Forms.Keys)
-        Me.DoTool.Size = New System.Drawing.Size(144, 22)
-        Me.DoTool.Text = "Do"
         '
         'UndoTool
         '
+        resources.ApplyResources(Me.UndoTool, "UndoTool")
         Me.UndoTool.Image = Global.Notepad__.My.Resources.Resource.undo_1_icon_icons_com_62895
         Me.UndoTool.Name = "UndoTool"
-        Me.UndoTool.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Z), System.Windows.Forms.Keys)
-        Me.UndoTool.Size = New System.Drawing.Size(144, 22)
-        Me.UndoTool.Text = "Undo"
         '
         'ToolStripSeparator1
         '
+        resources.ApplyResources(Me.ToolStripSeparator1, "ToolStripSeparator1")
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(141, 6)
         '
         'CutToolStrip
         '
+        resources.ApplyResources(Me.CutToolStrip, "CutToolStrip")
         Me.CutToolStrip.Image = Global.Notepad__.My.Resources.Resource.cortar_icono_9536_128
         Me.CutToolStrip.Name = "CutToolStrip"
-        Me.CutToolStrip.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-        Me.CutToolStrip.Size = New System.Drawing.Size(144, 22)
-        Me.CutToolStrip.Text = "Cut"
         '
         'CopyToolStrip
         '
+        resources.ApplyResources(Me.CopyToolStrip, "CopyToolStrip")
         Me.CopyToolStrip.Image = Global.Notepad__.My.Resources.Resource.copy_two_paper_sheets_interface_symbol_icon_icons_com_73283
         Me.CopyToolStrip.Name = "CopyToolStrip"
-        Me.CopyToolStrip.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.CopyToolStrip.Size = New System.Drawing.Size(144, 22)
-        Me.CopyToolStrip.Text = "Copy"
         '
         'PasteTool
         '
+        resources.ApplyResources(Me.PasteTool, "PasteTool")
         Me.PasteTool.Image = Global.Notepad__.My.Resources.Resource.clipboard_paste_button_icon_icons_com_72805
         Me.PasteTool.Name = "PasteTool"
-        Me.PasteTool.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.V), System.Windows.Forms.Keys)
-        Me.PasteTool.Size = New System.Drawing.Size(144, 22)
-        Me.PasteTool.Text = "Paste"
         '
         'SearchTool
         '
+        resources.ApplyResources(Me.SearchTool, "SearchTool")
         Me.SearchTool.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FindTool, Me.FindReplaceTool})
         Me.SearchTool.Name = "SearchTool"
-        Me.SearchTool.Size = New System.Drawing.Size(54, 20)
-        Me.SearchTool.Text = "Search"
         '
         'FindTool
         '
+        resources.ApplyResources(Me.FindTool, "FindTool")
         Me.FindTool.Image = Global.Notepad__.My.Resources.Resource.find
         Me.FindTool.Name = "FindTool"
-        Me.FindTool.Size = New System.Drawing.Size(144, 22)
-        Me.FindTool.Text = "Find"
         '
         'FindReplaceTool
         '
+        resources.ApplyResources(Me.FindReplaceTool, "FindReplaceTool")
         Me.FindReplaceTool.Image = Global.Notepad__.My.Resources.Resource.Actions_find_replace_icon
         Me.FindReplaceTool.Name = "FindReplaceTool"
-        Me.FindReplaceTool.Size = New System.Drawing.Size(144, 22)
-        Me.FindReplaceTool.Text = "Find & Replace"
         '
         'VentanaToolStripMenuItem
         '
+        resources.ApplyResources(Me.VentanaToolStripMenuItem, "VentanaToolStripMenuItem")
         Me.VentanaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PestañasTool, Me.VentanasTool})
         Me.VentanaToolStripMenuItem.Name = "VentanaToolStripMenuItem"
-        Me.VentanaToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
-        Me.VentanaToolStripMenuItem.Text = "Ventana"
         '
         'PestañasTool
         '
+        resources.ApplyResources(Me.PestañasTool, "PestañasTool")
         Me.PestañasTool.Name = "PestañasTool"
-        Me.PestañasTool.Size = New System.Drawing.Size(152, 22)
-        Me.PestañasTool.Text = "Pestañas"
         '
         'VentanasTool
         '
+        resources.ApplyResources(Me.VentanasTool, "VentanasTool")
         Me.VentanasTool.Name = "VentanasTool"
-        Me.VentanasTool.Size = New System.Drawing.Size(152, 22)
-        Me.VentanasTool.Text = "Ventanas"
+        '
+        'LanguageTool
+        '
+        resources.ApplyResources(Me.LanguageTool, "LanguageTool")
+        Me.LanguageTool.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EnglishTool, Me.GalicianTool})
+        Me.LanguageTool.Name = "LanguageTool"
+        '
+        'EnglishTool
+        '
+        resources.ApplyResources(Me.EnglishTool, "EnglishTool")
+        Me.EnglishTool.Name = "EnglishTool"
+        '
+        'GalicianTool
+        '
+        resources.ApplyResources(Me.GalicianTool, "GalicianTool")
+        Me.GalicianTool.Name = "GalicianTool"
         '
         'helpToolStrip
         '
+        resources.ApplyResources(Me.helpToolStrip, "helpToolStrip")
         Me.helpToolStrip.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutTool})
         Me.helpToolStrip.Name = "helpToolStrip"
-        Me.helpToolStrip.Size = New System.Drawing.Size(24, 20)
-        Me.helpToolStrip.Text = "?"
         '
         'AboutTool
         '
+        resources.ApplyResources(Me.AboutTool, "AboutTool")
         Me.AboutTool.Image = Global.Notepad__.My.Resources.Resource.about_128
         Me.AboutTool.Name = "AboutTool"
-        Me.AboutTool.Size = New System.Drawing.Size(107, 22)
-        Me.AboutTool.Text = "About"
         '
         'ToolStrip1
         '
+        resources.ApplyResources(Me.ToolStrip1, "ToolStrip1")
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripButton, Me.OpenToolStripButton, Me.SaveToolStripButton, Me.toolStripSeparator, Me.CutToolStripButton, Me.CopyToolStripButton, Me.PasteToolStripButton, Me.toolStripSeparator2, Me.ToolStripundo, Me.ToolStripredo})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 24)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(686, 25)
-        Me.ToolStrip1.TabIndex = 3
-        Me.ToolStrip1.Text = "ToolStrip1"
         '
         'NewToolStripButton
         '
+        resources.ApplyResources(Me.NewToolStripButton, "NewToolStripButton")
         Me.NewToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.NewToolStripButton.Image = CType(resources.GetObject("NewToolStripButton.Image"), System.Drawing.Image)
-        Me.NewToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.NewToolStripButton.Name = "NewToolStripButton"
-        Me.NewToolStripButton.Size = New System.Drawing.Size(23, 22)
-        Me.NewToolStripButton.Text = "&New"
         '
         'OpenToolStripButton
         '
+        resources.ApplyResources(Me.OpenToolStripButton, "OpenToolStripButton")
         Me.OpenToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.OpenToolStripButton.Image = CType(resources.GetObject("OpenToolStripButton.Image"), System.Drawing.Image)
-        Me.OpenToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.OpenToolStripButton.Name = "OpenToolStripButton"
-        Me.OpenToolStripButton.Size = New System.Drawing.Size(23, 22)
-        Me.OpenToolStripButton.Text = "&Open"
         '
         'SaveToolStripButton
         '
+        resources.ApplyResources(Me.SaveToolStripButton, "SaveToolStripButton")
         Me.SaveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.SaveToolStripButton.Image = CType(resources.GetObject("SaveToolStripButton.Image"), System.Drawing.Image)
-        Me.SaveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.SaveToolStripButton.Name = "SaveToolStripButton"
-        Me.SaveToolStripButton.Size = New System.Drawing.Size(23, 22)
-        Me.SaveToolStripButton.Text = "&Save"
         '
         'toolStripSeparator
         '
+        resources.ApplyResources(Me.toolStripSeparator, "toolStripSeparator")
         Me.toolStripSeparator.Name = "toolStripSeparator"
-        Me.toolStripSeparator.Size = New System.Drawing.Size(6, 25)
         '
         'CutToolStripButton
         '
+        resources.ApplyResources(Me.CutToolStripButton, "CutToolStripButton")
         Me.CutToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.CutToolStripButton.Image = CType(resources.GetObject("CutToolStripButton.Image"), System.Drawing.Image)
-        Me.CutToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.CutToolStripButton.Name = "CutToolStripButton"
-        Me.CutToolStripButton.Size = New System.Drawing.Size(23, 22)
-        Me.CutToolStripButton.Text = "C&ut"
         '
         'CopyToolStripButton
         '
+        resources.ApplyResources(Me.CopyToolStripButton, "CopyToolStripButton")
         Me.CopyToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.CopyToolStripButton.Image = CType(resources.GetObject("CopyToolStripButton.Image"), System.Drawing.Image)
-        Me.CopyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.CopyToolStripButton.Name = "CopyToolStripButton"
-        Me.CopyToolStripButton.Size = New System.Drawing.Size(23, 22)
-        Me.CopyToolStripButton.Text = "&Copy"
         '
         'PasteToolStripButton
         '
+        resources.ApplyResources(Me.PasteToolStripButton, "PasteToolStripButton")
         Me.PasteToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.PasteToolStripButton.Image = CType(resources.GetObject("PasteToolStripButton.Image"), System.Drawing.Image)
-        Me.PasteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.PasteToolStripButton.Name = "PasteToolStripButton"
-        Me.PasteToolStripButton.Size = New System.Drawing.Size(23, 22)
-        Me.PasteToolStripButton.Text = "&Paste"
         '
         'toolStripSeparator2
         '
+        resources.ApplyResources(Me.toolStripSeparator2, "toolStripSeparator2")
         Me.toolStripSeparator2.Name = "toolStripSeparator2"
-        Me.toolStripSeparator2.Size = New System.Drawing.Size(6, 25)
         '
         'ToolStripundo
         '
+        resources.ApplyResources(Me.ToolStripundo, "ToolStripundo")
         Me.ToolStripundo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.ToolStripundo.Image = Global.Notepad__.My.Resources.Resource.undo_1_icon_icons_com_62895
-        Me.ToolStripundo.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripundo.Name = "ToolStripundo"
-        Me.ToolStripundo.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripundo.Text = "ToolStripButton1"
         '
         'ToolStripredo
         '
+        resources.ApplyResources(Me.ToolStripredo, "ToolStripredo")
         Me.ToolStripredo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.ToolStripredo.Image = Global.Notepad__.My.Resources.Resource.redo_128
-        Me.ToolStripredo.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripredo.Name = "ToolStripredo"
-        Me.ToolStripredo.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripredo.Text = "ToolStripButton2"
         '
         'TabControl
         '
-        Me.TabControl.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        resources.ApplyResources(Me.TabControl, "TabControl")
         Me.TabControl.Controls.Add(Me.tpMas)
-        Me.TabControl.Location = New System.Drawing.Point(0, 49)
         Me.TabControl.Name = "TabControl"
         Me.TabControl.SelectedIndex = 0
-        Me.TabControl.Size = New System.Drawing.Size(686, 522)
-        Me.TabControl.TabIndex = 4
         '
         'tpMas
         '
-        Me.tpMas.Location = New System.Drawing.Point(4, 22)
+        resources.ApplyResources(Me.tpMas, "tpMas")
         Me.tpMas.Name = "tpMas"
-        Me.tpMas.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpMas.Size = New System.Drawing.Size(678, 496)
-        Me.tpMas.TabIndex = 1
-        Me.tpMas.Text = "    +"
         Me.tpMas.UseVisualStyleBackColor = True
         '
         'MyNotepad
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(686, 569)
         Me.Controls.Add(Me.TabControl)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "MyNotepad"
-        Me.Text = "Notepadd++"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ToolStrip1.ResumeLayout(False)
@@ -395,4 +344,7 @@ Partial Class MyNotepad
     Friend WithEvents VentanaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PestañasTool As ToolStripMenuItem
     Friend WithEvents VentanasTool As ToolStripMenuItem
+    Friend WithEvents LanguageTool As ToolStripMenuItem
+    Friend WithEvents EnglishTool As ToolStripMenuItem
+    Friend WithEvents GalicianTool As ToolStripMenuItem
 End Class

@@ -155,6 +155,24 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to The file.
+        '''</summary>
+        Friend Shared ReadOnly Property mod1() As String
+            Get
+                Return ResourceManager.GetString("mod1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to has been modified, Do you want to save it?.
+        '''</summary>
+        Friend Shared ReadOnly Property mod2() As String
+            Get
+                Return ResourceManager.GetString("mod2", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend Shared ReadOnly Property nuevo() As System.Drawing.Bitmap

@@ -1,4 +1,8 @@
-﻿Public Class MyNotepad
+﻿Imports System.Globalization
+Imports System.Resources
+Imports System.Threading
+
+Public Class MyNotepad
 
     Dim ListaArchivos As New List(Of Contenido)
 
@@ -23,8 +27,8 @@
 
 
         Dim OpenFileDialog As New OpenFileDialog
-            OpenFileDialog.InitialDirectory = My.Computer.FileSystem.SpecialDirectories.MyDocuments
-            OpenFileDialog.Filter = "text Files|*.txt"
+        OpenFileDialog.InitialDirectory = My.Computer.FileSystem.SpecialDirectories.MyDocuments
+        OpenFileDialog.Filter = "text Files|*.txt"
         'Aqui se selecciona el tipo de documento que se podra escoger al buscar
 
         If (OpenFileDialog.ShowDialog() = DialogResult.OK) Then
@@ -84,11 +88,20 @@
     '!!'
     Private Sub MyNotepad_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Dim i As Integer = 0
+        ''Dim culture As CultureInfo = CultureInfo.CreateSpecificCulture("gl-ES")
+        ''Thread.CurrentThread.CurrentCulture = culture
+        ''Thread.CurrentThread.CurrentUICulture = culture
+        Dim rm As New ResourceManager("Notepad__.Resource",
+        GetType(MyNotepad).Assembly)
+
         For Each b As Contenido In ListaArchivos
             Me.TabControl.SelectedIndex = i
             i = i + 1
+
+
             If (b.modificado = True) Then
-                Dim resultado As MsgBoxResult = MsgBox("El archivo " + b.filename + " se ha modificado, ¿Desea guardarlo antes de salir?", vbCritical + vbYesNoCancel)
+
+                Dim resultado As MsgBoxResult = MsgBox(rm.GetString("mod1") + b.filename + " " + rm.GetString("mod2"), vbCritical + vbYesNoCancel)
                 If (resultado = vbYes) Then
                     SaveTool_Click(Nothing, Nothing)
                 End If
@@ -98,6 +111,7 @@
             End If
 
         Next
+
 
     End Sub
 
@@ -126,6 +140,11 @@
         PestañasTool.Checked = True
         VentanasTool.Enabled = True
         VentanasTool.Checked = False
+        EnglishTool.Checked = True
+        GalicianTool.Checked = False
+        EnglishTool.Enabled = False
+        GalicianTool.Enabled = True
+
     End Sub
 
     Private Sub FindTool_Click(sender As Object, e As EventArgs) Handles FindTool.Click
@@ -141,24 +160,23 @@
         VentanasTool.Checked = True
 
         Dim i As Integer = 0
+        Me.IsMdiContainer = True
 
-        While i < TabControl.TabCount
+        While i < TabControl.TabCount - 1
 
             Dim frm As New Form2
 
-            frm.MdiParent = Me.MdiParent
+            frm.MdiParent = Me
+            frm.Controls.Add((TabControl.TabPages(i).Controls(0)))
+            frm.Text = TabControl.TabPages(i).Text
             frm.Show()
 
 
             i = i + 1
         End While
-
-
-
-
-
-
-
+        RemoveHandler TabControl.SelectedIndexChanged, AddressOf TabControl_SelectedIndexChanged
+        TabControl.TabPages.Clear()
+        TabControl.Visible = False
 
     End Sub
 
@@ -167,5 +185,61 @@
         PestañasTool.Checked = True
         VentanasTool.Enabled = True
         VentanasTool.Checked = False
+
+        Dim i As Integer = 0
+
+
+        While i < MdiChildren.Count
+            Dim Tab As New TabPage
+
+            Tab.Controls.Add(MdiChildren(i).Controls(0))
+            TabControl.TabPages.Add(Tab)
+            Tab.Text = MdiChildren(i).Text
+            i = i + 1
+        End While
+
+        TabControl.Visible = True
+        Me.IsMdiContainer = False
     End Sub
+
+    Private Sub EnglishTool_Click(sender As Object, e As EventArgs) Handles EnglishTool.Click
+        EnglishTool.Checked = True
+        GalicianTool.Checked = False
+        EnglishTool.Enabled = False
+        GalicianTool.Enabled = True
+        LimpiarControles(e)
+        Dim culture As CultureInfo = CultureInfo.CreateSpecificCulture("en-EN")
+        Thread.CurrentThread.CurrentCulture = culture
+        Thread.CurrentThread.CurrentUICulture = culture
+        Me.Refresh()
+        Me.Controls.Clear()
+        Me.InitializeComponent()
+
+    End Sub
+
+    Private Sub GalicianTool_Click(sender As Object, e As EventArgs) Handles GalicianTool.Click
+        EnglishTool.Checked = False
+        GalicianTool.Checked = True
+        EnglishTool.Enabled = True
+        GalicianTool.Enabled = False
+        LimpiarControles(e)
+        Dim culture As CultureInfo = CultureInfo.CreateSpecificCulture("gl-ES")
+        Thread.CurrentThread.CurrentCulture = culture
+        Thread.CurrentThread.CurrentUICulture = culture
+        Me.Controls.Clear()
+        Me.InitializeComponent()
+
+    End Sub
+
+
+    Public Sub LimpiarControles(ByVal control As Object)
+
+        Dim i As Integer = 0
+
+        While i < TabControl.TabPages.Count
+            i = i + 1
+        End While
+
+    End Sub
+
 End Class

@@ -12,3 +12,7 @@ c:\users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\o
 c:\users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\obj\Debug\Notepad__.Resource.resources
 C:\Users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\obj\Debug\Notepad__.Buscar.resources
 C:\Users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\obj\Debug\Notepad__.Form2.resources
+C:\Users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\bin\Debug\gl-ES\Notepad++.resources.dll
+C:\Users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\obj\Debug\Notepad__.MyNotepad.gl-ES.resources
+C:\Users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\obj\Debug\Notepad__.Resource.gl-ES.resources
+C:\Users\a15marcosrc\documents\visual studio 2015\Projects\Notepad++\Notepad++\obj\Debug\gl-ES\Notepad++.resources.dll
